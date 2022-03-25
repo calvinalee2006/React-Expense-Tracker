@@ -35,6 +35,7 @@ export default function Form({ setExpenses }) {
   function handleSubmit(event) {
     event.preventDefault();
     setExpenses((existingExpenses) => [...existingExpenses, expense]);
+    localStorage.setItem();
   }
 
   return (
