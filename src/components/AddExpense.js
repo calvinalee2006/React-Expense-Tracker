@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 
-//Psuedocode:
-//The data needs to be moved from the child into the parent.
-//The children(Form and TableInfo) needs to given access to the data
-// In your Form function place props as the argument.
-// how do i get the data type from the array and how do i map it out.
-
 export default function Form({ setExpenses }) {
   const [expense, setExpense] = useState({
     currencySelect: "",
@@ -15,14 +9,6 @@ export default function Form({ setExpenses }) {
     expense: "",
   });
 
-  // function handleChange(event) {
-  //   setExpenses((prevFormData) => {
-  //     return {
-  //       ...prevFormData,
-  //       [event.target.name]: event.target.value,
-  //     }
-  //   })
-  // }
   function handleChange(event) {
     setExpense((prevState) => {
       return {
